@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    min-height: 100vh;
+    background-color: #16151F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    background-color: #913fe2;
+    width: 100%;
+    height: 50px;
+}
+
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 2rem;
+}
+
+.videoContainer{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #000;
+}
+
+.videoContainer video{
+    width: 100%;
+}
+
+@media screen and (max-width:430px) {
+    .imgContainer{
+        width: 95vw;
+    }
+}
