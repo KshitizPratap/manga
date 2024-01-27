@@ -6,10 +6,17 @@ function App() {
     <div className={classes.mainContainer}>
       <div className={classes.header}></div>
       <div className={classes.imgContainer}>
-        {images_Routes.map((vid_src, i) => {
+        {images_Routes.map((src, i) => {
           return (
-            <div className={classes.videoContainer}>
-              <video src={vid_src} key={i} autoPlay muted loop></video>
+            <div className={classes.videoContainer} style={{
+              backgroundColor: src.bg,
+              padding: src.type == 0 ? "2rem 0" : "0"
+            }}>
+              {src.type == 0 ? (
+                <video src={src.route} key={i} autoPlay muted loop></video>
+              ) : (
+                <img src={src.route} alt="" />
+              )}
             </div>
           );
         })}

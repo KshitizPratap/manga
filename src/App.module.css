@@ -27,11 +27,9 @@
 
 .videoContainer{
     width: 100%;
-    padding: 2rem 0;
-    background-color: #000;
 }
 
-.videoContainer video{
+.videoContainer video, .videoContainer img{
     width: 100%;
 }
 
